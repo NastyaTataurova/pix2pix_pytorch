@@ -1,9 +1,5 @@
 FILE=$1
 
-if [[$FILE != "maps" ]]; then
-    echo "Dataset received"
-    exit 1
-fi
 echo "Specified [$FILE]"
 URL=https://people.eecs.berkeley.edu/~taesung_park/CycleGAN/datasets/$FILE.zip
 mkdir $datasets
