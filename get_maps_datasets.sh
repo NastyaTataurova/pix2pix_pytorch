@@ -1,10 +1,7 @@
-FILE=$1
-
-echo "Specified [$FILE]"
-URL=https://people.eecs.berkeley.edu/~taesung_park/CycleGAN/datasets/$FILE.zip
+URL=https://people.eecs.berkeley.edu/~taesung_park/CycleGAN/datasets/maps.zip
 mkdir $datasets
-ZIP_FILE=./$FILE.zip
-TARGET_DIR=./$FILE/
+ZIP_FILE=./maps.zip
+TARGET_DIR=./maps/
 wget -N $URL -O $ZIP_FILE
 mkdir $TARGET_DIR
 unzip $ZIP_FILE -d ./datasets/
