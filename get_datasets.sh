@@ -1,5 +1,5 @@
 FILE=$1
-if [[$FILE != "edges2shoes"]]; then
+if [[$FILE == "edges2shoes"]]; then
   URL=http://efrosgans.eecs.berkeley.edu/pix2pix/datasets/$FILE.tar.gz
   TAR_FILE=./datasets/$FILE.tar.gz
   TARGET_DIR=./datasets/$FILE/
@@ -9,7 +9,7 @@ if [[$FILE != "edges2shoes"]]; then
   rm $TAR_FILE
 fi
 
-if [[$FILE != "maps"]]; then
+if [[$FILE == "maps"]]; then
     echo "Specified [$FILE]"
     URL=https://people.eecs.berkeley.edu/~taesung_park/CycleGAN/datasets/$FILE.zip
     mkdir $datasets
