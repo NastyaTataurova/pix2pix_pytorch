@@ -5,3 +5,4 @@ wget -N $URL -O $TAR_FILE
 mkdir -p $TARGET_DIR
 tar -zxvf $TAR_FILE -C ./datasets/
 rm $TAR_FILE
+rm ./datasets/edges2shoes/train/{2003..49001}_AB.jpg
