@@ -8,7 +8,7 @@ wget -N $URL -O $TAR_FILE
 tar -zxvf $TAR_FILE -C ./datasets/flowers/train/trimaps/
 rm $TAR_FILE
 rm ./datasets/flowers/train/trimaps/trimaps/imlist.mat
-mv ./datasets/flowers/train/trimaps/trimaps/image-000{1..9}.jpg $TEST_DIR
+mv ./datasets/flowers/train/trimaps/trimaps/image-000{1..9}.jpg ./datasets/flowers/test/trimaps/trimaps
 
 
 URL=https://www.robots.ox.ac.uk/~vgg/data/flowers/17/17flowers.tgz
@@ -21,4 +21,4 @@ wget -N $URL -O $TAR_FILE
 tar -zxvf $TAR_FILE -C ./datasets/flowers/train/jpg/
 rm $TAR_FILE
 rm ./datasets/flowers/train/jpg/jpg/files.txt
-mv ./datasets/flowers/train/jpg/jpg/image-000{1..9}.jpg $TEST_DIR
+mv ./datasets/flowers/train/jpg/jpg/image-000{1..9}.jpg ./datasets/flowers/test/jpg/jpg
