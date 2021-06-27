@@ -1,5 +1,5 @@
 URL=https://www.robots.ox.ac.uk/~vgg/data/flowers/17/trimaps.tgz
-TAR_FILE=./datasets/trimaps.tgz
+TAR_FILE=./datasets/flowers/trimaps.tgz
 TARGET_DIR=./datasets/flowers/trimaps
 mkdir -p $TARGET_DIR
 wget -N $URL -O $TAR_FILE
@@ -9,7 +9,7 @@ rm ./datasets/flowers/trimaps/trimaps/imlist.mat
 
 
 URL=https://www.robots.ox.ac.uk/~vgg/data/flowers/17/17flowers.tgz
-TAR_FILE=./datasets/17flowers.tgz
+TAR_FILE=./datasets/flowers/17flowers.tgz
 TARGET_DIR=./datasets/flowers/jpg
 mkdir -p $TARGET_DIR
 wget -N $URL -O $TAR_FILE
