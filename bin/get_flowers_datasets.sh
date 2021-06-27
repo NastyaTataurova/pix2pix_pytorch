@@ -9,6 +9,11 @@ tar -zxvf $TAR_FILE -C ./datasets/flowers/train/trimaps/
 rm $TAR_FILE
 rm ./datasets/flowers/train/trimaps/trimaps/imlist.mat
 # mv /content/pix2pix_pytorch/datasets/flowers/train/trimaps/trimaps/image_000{1..9}.png /content/pix2pix_pytorch/datasets/flowers/test/trimaps/trimaps/
+mv /content/pix2pix_pytorch/datasets/flowers/train/trimaps/trimaps/image_0{002,028,097,250,285}.png /content/pix2pix_pytorch/datasets/flowers/test/trimaps/trimaps/
+# mv /content/pix2pix_pytorch/datasets/flowers/train/trimaps/trimaps/image_000{1..9}.png /content/pix2pix_pytorch/datasets/flowers/test/trimaps/trimaps/
+# mv /content/pix2pix_pytorch/datasets/flowers/train/trimaps/trimaps/image_000{1..9}.png /content/pix2pix_pytorch/datasets/flowers/test/trimaps/trimaps/
+# mv /content/pix2pix_pytorch/datasets/flowers/train/trimaps/trimaps/image_000{1..9}.png /content/pix2pix_pytorch/datasets/flowers/test/trimaps/trimaps/
+# mv /content/pix2pix_pytorch/datasets/flowers/train/trimaps/trimaps/image_000{1..9}.png /content/pix2pix_pytorch/datasets/flowers/test/trimaps/trimaps/
 
 
 URL=https://www.robots.ox.ac.uk/~vgg/data/flowers/17/17flowers.tgz
