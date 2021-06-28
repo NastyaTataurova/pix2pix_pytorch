@@ -25,7 +25,7 @@ if __name__ == "__main__":
     load_model_optimazer('gener_flowers.pth', gener_flowers, optimizer_gener_flowers, lr, device)
 
     print('Загрузка файла. Файл есть вот тут: <./images/flower.png>')
-    file_path = input('Напишите путь файлу: ')  # input("напши дир с файлом ") #
+    file_path = input('Напишите путь файлу: ') 
 
     image_size = 256
     # stats = (0.5, 0.5, 0.5), (0.5, 0.5, 0.5)
