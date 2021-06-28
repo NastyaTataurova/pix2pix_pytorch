@@ -1,3 +1,5 @@
+cd pix2pix_pytorch
+
 URL=https://www.robots.ox.ac.uk/~vgg/data/flowers/17/trimaps.tgz
 TAR_FILE=./datasets/flowers/train/trimaps.tgz
 TARGET_DIR=./datasets/flowers/train/trimaps
