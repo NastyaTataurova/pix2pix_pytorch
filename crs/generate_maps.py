@@ -1,3 +1,5 @@
+import os
+os.chdir('pix2pix_pytorch/')
 from crs.model.generator import *
 from crs.model.discriminator import *
 from crs.utils.save_load_weights import *
