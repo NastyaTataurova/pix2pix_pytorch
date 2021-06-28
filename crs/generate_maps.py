@@ -1,6 +1,6 @@
-from pix2pix_pytorch.crs.model.generator import *
-from pix2pix_pytorch.crs.model.discriminator import *
-from pix2pix_pytorch.crs.utils.save_load_weights import *
+from crs.model.generator import *
+from crs.model.discriminator import *
+from crs.utils.save_load_weights import *
 import os
 import matplotlib.pyplot as plt
 from PIL import Image
