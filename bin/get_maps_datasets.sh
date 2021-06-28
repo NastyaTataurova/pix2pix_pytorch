@@ -6,7 +6,7 @@ wget -N $URL -O $ZIP_FILE
 mkdir $TARGET_DIR
 unzip $ZIP_FILE -d ./datasets/
 rm $ZIP_FILE
-rm -r /content/pix2pix_pytorch/datasets/maps/train/resized
+rm -r ./datasets/maps/train/resized
 
 
 
