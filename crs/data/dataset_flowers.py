@@ -12,8 +12,8 @@ transforms = tt.Compose([tt.ToPILImage(),
                          ])
 
 # path to train images
-train_path_flowers_jpg = '/datasets/flowers/train/jpg/jpg'
-train_path_flowers_trimaps = '/datasets/flowers/train/trimaps/trimaps'
+train_path_flowers_jpg = './datasets/flowers/train/jpg/jpg'
+train_path_flowers_trimaps = './datasets/flowers/train/trimaps/trimaps'
 
 # path to val images
 val_path_flowers_jpg = './datasets/flowers/test/jpg/jpg'
@@ -30,5 +30,3 @@ val_dataset_flowers = GetDatasetFlowers(file_paths_jpg=val_path_flowers_jpg,
                                         file_paths_trimaps=val_path_flowers_trimaps,
                                         transform=transforms)
 val_loader_flowers = DataLoader(val_dataset_flowers, batch_size=5)
-
-print(next(iter(val_loader_flowers))[0].shape)
