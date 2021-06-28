@@ -1,7 +1,7 @@
 # pix2pix_pytorch
 Реализована архитектура pix2pix, обученная наборах данных Maps и Flowers.
 
-У меня не было опыта в разработке репозиторий github, поэтому код ниже может криво работать (или что-то не заработать), на этот случай добавляю ссылку на GoogleColab в pix2pix.ipynb и инструкцию к нему ниже.
+У меня не было опыта в разработке репозиторий github, поэтому может возникнуть ситуация, что что-то пойдет не так (код будет криво работать или что-то не заработает), на этот случай добавляю ссылку на GoogleColab в pix2pix.ipynb и инструкцию к нему ниже.
 
 # 1. Запуск с GitHub
 Скачать проект:
@@ -9,7 +9,7 @@
 git clone https://github.com/NastyaTataurova/pix2pix_pytorch
 ```
 ```bash
-pip install -r ./pix2pix_pytorch/requirements.txt
+pip install -r ./requirements.txt
 ```
 ## 1.1 Maps
 Примеры сгенерированных изображений:
@@ -17,7 +17,7 @@ pip install -r ./pix2pix_pytorch/requirements.txt
 
 Загрузить обученную модель:
 ```bash
-bash ./pix2pix_pytorch/bin/load_model_maps.sh
+bash ./bin/load_model_maps.sh
 ```
 Запустить обученную модель для генерации изображения:
 ```bash
@@ -35,7 +35,7 @@ python3 src/generate_maps.py
 
 Загрузить обученную модель:
 ```bash
-bash ./pix2pix_pytorch/bin/load_model_flowers.sh
+bash ./bin/load_model_flowers.sh
 ```
 Запустить обученную модель для генерации изображения:
 ```bash
