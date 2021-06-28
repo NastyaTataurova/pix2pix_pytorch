@@ -1,5 +1,5 @@
 from torch.utils.data import DataLoader
-from scripts.preprocess_maps import *
+from pix2pix_pytorch.scripts.preprocess_maps import *
 import torchvision.transforms as tt
 
 image_size = 256
