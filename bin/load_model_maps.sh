@@ -1,4 +1,4 @@
-cd ./pix2pix_pytorch/crs
+cd ./crs
 
 # loading the weights of a model trained on a dataset with maps
 pip install -q -U --no-cache-dir gdown --pre
