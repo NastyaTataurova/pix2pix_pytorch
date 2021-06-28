@@ -52,6 +52,7 @@ python3 src/generate_flowers.py
 3. Выбрать "y", когда предложат загрузить модель
 
 ![image](https://user-images.githubusercontent.com/49210968/123666301-c2f14e00-d841-11eb-8f1e-635189024c21.png)
+
 4. Запустить модуль "Upload your image (Maps)", чтобы добавить свое изображение выбрать "1", дефолтное - "2"
 5. Плучить результат
 
