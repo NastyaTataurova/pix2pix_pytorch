@@ -1,3 +1,10 @@
+from tqdm import tqdm
+from crs.model.generator import *
+from crs.model.discriminator import *
+from crs.utils.save_load_weights import *
+from crs.data.dataset_flowers import *
+
+
 def train(discrim, gener, loader, opt_discrim, opt_gener, loss_l1, loss_bce, num_epoch):
   history = []
   for epoch in tqdm(range(num_epoch)):    
@@ -32,20 +39,27 @@ def train(discrim, gener, loader, opt_discrim, opt_gener, loss_l1, loss_bce, num
     history.append((discrim_real_image_loss, discrim_gener_image_loss, discrim_loss))
 
     print(f'\n{epoch+1}/{num_epoch} epoch: loss={discrim_loss}, generated image loss={discrim_gener_image_loss}')
-    plt.subplot(1, 3, 1)
-    plt.imshow(x[0].permute(1, 2, 0).cpu().detach().numpy(), vmin=0, vmax=255)
-    plt.title('Real')
-    plt.axis('off')
+    return history
 
-    plt.subplot(1, 3, 2)
-    plt.imshow(y[0].permute(1, 2, 0).cpu().detach().numpy(), vmin=0, vmax=255)
-    plt.title('Target')
-    plt.axis('off')
+if __name__ == "__main__":
 
-    image_fake = np.asarray(y_gener[0].permute(1, 2, 0).cpu().detach().numpy(), dtype=np.float32)
-    plt.subplot(1, 3, 3)
-    plt.imshow(image_fake, vmin=0, vmax=255)
-    plt.title('Fake')
-    plt.axis('off')
+    device = 'cuda' if torch.cuda.is_available() else 'cpu'
 
-  return history
+    lr = 2e-4
+    lambd = 100
+
+    discrim_flowers = discriminator().to(device)
+    optimizer_discrim_flowers = torch.optim.Adam(discrim_flowers.parameters(), lr=lr, betas=(0.5, 0.9))
+    loss_bce_flowers = nn.BCEWithLogitsLoss()
+
+    gener_flowers = generator().to(device)
+    optimizer_gener_flowers = torch.optim.Adam(gener_flowers.parameters(), lr=lr, betas=(0.5, 0.9))
+    loss_l1_flowers = nn.L1Loss()
+
+    num_epoch = 400
+    train(discrim_flowers, gener_flowers, train_loader_flowers, optimizer_discrim_flowers, optimizer_gener_flowers,
+          loss_l1_flowers, loss_bce_flowers, num_epoch)
+
+    # saving weights
+    save_model_optimazer(discrim_flowers, optimizer_discrim_flowers, 'discrim_flowers.pth')
+    save_model_optimazer(gener_flowers, optimizer_gener_flowers, 'gener_flowers.pth')
