@@ -1,6 +1,8 @@
 # pix2pix_pytorch
 Реализована архитектура pix2pix, обученная наборах данных Maps и Flowers.
 
+У меня не было опыта в разработке репозиторий github, поэтому код ниже может криво работать (или что-то не заработать), на этот случай добавляю ссылку на GoogleColab в pix2pix.ipynb и инструкцию к нему ниже.
+
 Скачать проект:
 ```bash
 git clone https://github.com/NastyaTataurova/pix2pix_pytorch
@@ -25,6 +27,7 @@ python3 src/generate_maps.py
 
 ## Flowers
 Примеры сгенерированных изображений:
+
 ![image](https://user-images.githubusercontent.com/49210968/123640905-4e5ee500-d82a-11eb-9e71-11ca867c40bc.png)
 
 ![image](https://user-images.githubusercontent.com/49210968/123641070-8403ce00-d82a-11eb-8101-3b47f7a0259e.png)
