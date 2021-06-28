@@ -24,8 +24,8 @@ if __name__ == "__main__":
     load_model_optimazer('discrim_flowers.pth', discrim_flowers, optimizer_discrim_flowers, lr, device)
     load_model_optimazer('gener_flowers.pth', gener_flowers, optimizer_gener_flowers, lr, device)
 
-    print('Загрузка файла. Файл есть вот тут: /images/map.png')
-    file_path = r'./images/flower.png'  # input("напши дир с файлом ") #
+    print('Загрузка файла. Файл есть вот тут: <./images/flower.png>')
+    file_path = input('Напишите путь файлу: ')  # input("напши дир с файлом ") #
     import os
 
     print(os.getcwd())
