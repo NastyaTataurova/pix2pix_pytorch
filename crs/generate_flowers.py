@@ -26,9 +26,7 @@ if __name__ == "__main__":
 
     print('Загрузка файла. Файл есть вот тут: <./images/flower.png>')
     file_path = input('Напишите путь файлу: ')  # input("напши дир с файлом ") #
-    import os
 
-    print(os.getcwd())
     image_size = 256
     # stats = (0.5, 0.5, 0.5), (0.5, 0.5, 0.5)
     transforms = tt.Compose([tt.ToPILImage(),
