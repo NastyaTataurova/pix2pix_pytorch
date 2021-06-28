@@ -10,7 +10,7 @@ wget -N $URL -O $TAR_FILE
 tar -zxvf $TAR_FILE -C ./datasets/flowers/train/trimaps/
 rm $TAR_FILE
 rm ./datasets/flowers/train/trimaps/trimaps/imlist.mat
-mv /content/pix2pix_pytorch/datasets/flowers/train/trimaps/trimaps/image_0{002,028,097,250,285}.png /content/pix2pix_pytorch/datasets/flowers/test/trimaps/trimaps/
+mv ./datasets/flowers/train/trimaps/trimaps/image_0{002,028,097,250,285}.png ./datasets/flowers/test/trimaps/trimaps/
 
 URL=https://www.robots.ox.ac.uk/~vgg/data/flowers/17/17flowers.tgz
 TAR_FILE=./datasets/flowers/train/17flowers.tgz
@@ -22,4 +22,4 @@ wget -N $URL -O $TAR_FILE
 tar -zxvf $TAR_FILE -C ./datasets/flowers/train/jpg/
 rm $TAR_FILE
 rm ./datasets/flowers/train/jpg/jpg/files.txt
-mv /content/pix2pix_pytorch/datasets/flowers/train/jpg/jpg/image_0{002,028,097,250,285}.jpg /content/pix2pix_pytorch/datasets/flowers/test/jpg/jpg/
+mv ./datasets/flowers/train/jpg/jpg/image_0{002,028,097,250,285}.jpg ./datasets/flowers/test/jpg/jpg/
