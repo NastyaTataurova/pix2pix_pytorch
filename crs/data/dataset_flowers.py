@@ -1,5 +1,5 @@
 from torch.utils.data import DataLoader
-from scripts.preprocess_flowers import *
+from pix2pix_pytorch.scripts.preprocess_flowers import *
 import torchvision.transforms as tt
 
 
