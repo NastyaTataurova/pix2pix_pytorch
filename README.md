@@ -50,12 +50,15 @@ python3 src/generate_flowers.py
 1. Запустить все до молуля "Dataset 1 -- Maps"
 2. Запустить все в модуле "Train model 1 (Maps)"
 3. Выбрать "y", когда предложат загрузить модель
+
 ![image](https://user-images.githubusercontent.com/49210968/123666301-c2f14e00-d841-11eb-8f1e-635189024c21.png)
 4. Запустить модуль "Upload your image (Maps)", чтобы добавить свое изображение выбрать "1", дефолтное - "2"
 5. Плучить результат
+
 ![image](https://user-images.githubusercontent.com/49210968/123666636-119ee800-d842-11eb-8142-f58644a6f5cc.png)
 ### 2.1.2 Аналогично с датасотом Flowes
 Результат:
+
 ![image](https://user-images.githubusercontent.com/49210968/123667326-b8838400-d842-11eb-9ed3-f93d5e05cebc.png)
 
 ## 2.2 Запуск обучения модели
