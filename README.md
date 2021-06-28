@@ -11,7 +11,8 @@ git clone https://github.com/NastyaTataurova/pix2pix_pytorch
 ```bash
 pip install -r ./requirements.txt
 ```
-## 1.1 Maps
+## 1.1 Загрузка обученной модели
+### 1.1.1 Maps
 Примеры сгенерированных изображений:
 ![image](https://user-images.githubusercontent.com/49210968/123641026-75b5b200-d82a-11eb-8863-cd958276c591.png)
 
@@ -26,7 +27,7 @@ python3 src/generate_maps.py
 Чтобы загрузить изображение, его нужно добавить в ./crs/images/, затем прописать путь.
 ![image](https://user-images.githubusercontent.com/49210968/123647427-bca6a600-d830-11eb-8a11-1e7d8802aa52.png)
 
-## 1.2 Flowers
+### 1.1.2 Flowers
 Примеры сгенерированных изображений:
 
 ![image](https://user-images.githubusercontent.com/49210968/123640905-4e5ee500-d82a-11eb-9e71-11ca867c40bc.png)
@@ -43,6 +44,17 @@ python3 src/generate_flowers.py
 ```
 Чтобы загрузить изображение, его нужно добавить в ./crs/images/, затем прописать путь.
 ![image](https://user-images.githubusercontent.com/49210968/123648030-4787a080-d831-11eb-93ce-47789ac769f3.png)
+
+
+## 1.2 Запуск обучения модели
+### 1.2.1 Maps
+```bash
+python3 src/train_maps.py
+```
+### 1.2.2 Flowers
+```bash
+python3 src/train_flowers.py
+```
 
 # 2. Запуск в GoogleColab
 ## 2.1 Загрузка обученной модели
