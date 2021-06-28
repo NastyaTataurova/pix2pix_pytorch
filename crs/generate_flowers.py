@@ -1,6 +1,6 @@
-from crs.model.generator import *
-from crs.model.discriminator import *
-from crs.utils.save_load_weights import *
+from pix2pix_pytorch.crs.model.generator import *
+from pix2pix_pytorch.crs.model.discriminator import *
+from pix2pix_pytorch.crs.utils.save_load_weights import *
 
 if __name__ == "__main__":
     device = 'cuda' if torch.cuda.is_available() else 'cpu'
